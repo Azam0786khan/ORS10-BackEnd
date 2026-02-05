@@ -26,7 +26,7 @@ public abstract class BaseDTO implements Serializable, DropdownList, Comparable<
 	 */
 	@Id
 	@GeneratedValue(generator = "ncsPk")
-	@GenericGenerator(name = "ncsPk", strategy = "increment")
+	@GenericGenerator(name = "ncsPk", strategy = "native")
 	@Column(name = "ID", unique = true, nullable = false)
 	protected Long id;
 	/**
