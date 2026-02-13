@@ -41,7 +41,7 @@ public class ApplicationExceptionHandlerCtl {
         res.addMessage(e.getMessage());
 
         return ResponseEntity
-                .status(HttpStatus.INTERNAL_SERVER_ERROR) // 500
+                .status(HttpStatus.INTERNAL_SERVER_ERROR) 
                 .body(res);
     }
 }
