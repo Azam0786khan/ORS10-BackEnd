@@ -29,7 +29,7 @@ public class ApplicationExceptionHandlerCtl {
         res.addMessage("Database service is currently unavailable. Please try again later.");
 
         return ResponseEntity
-                .status(HttpStatus.SERVICE_UNAVAILABLE)   // 503
+                .status(HttpStatus.SERVICE_UNAVAILABLE)  
                 .body(res);
     }
 
